@@ -28,6 +28,7 @@ import static com.weibo.rill.flow.service.plugin.PluginLoader.TASK_EXTENSION_SET
 @Service
 public class ProtocolPluginService {
 
+    //获取插件
     public List<JSONObject> getProtocolPlugins() {
         List<JSONObject> result = new ArrayList<>();
         for (DispatcherExtension dispatcherExtension : TASK_EXTENSION_SET) {
